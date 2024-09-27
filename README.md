@@ -2,24 +2,26 @@
 
 Simplified Hotel Management System
 
-The HotelApp needs to manage various hotel services for guest check-in and check-out. These services include valet parking for vehicles, room cleaning, and handling luggage carts. However, the HotelApp aims to interact with these services through a simplified, single interface provided by the FrontDesk. The FrontDesk class should delegate the client's requests to the appropriate service classes (Valet, HouseKeeping, Cart) while abstracting the service details from the client.
+Simplified Intelligent Home System
+
+The HomeApp needs to manage various home services for an intelligent home system. These services include turning on and off the lights, TV, and air conditioning. However, the HomeApp aims to interact with these services through a simplified, single interface provided by the HomeInterface. The HomeInterface class should delegate the user’s requests to the appropriate service classes (Light, TV, AirConditioning) while abstracting the service details from the user. Additionally, the HomeInterface should provide methods to turn on all services (turnOnAll()) and turn off all services (turnOffAll()).
 
 Class Definitions:
-HotelService (Interface): Defines the common interface for all hotel services.
 
-Valet: A service class implementing the HotelService interface, responsible for vehicle valet parking and pick-up. It includes the pickUpVehicle(plateNumber) method.
+HomeService (Interface): Defines the common interface for all home services.
 
-HouseKeeping: A service class implementing the HotelService interface, responsible for room cleaning. It includes the cleanRoom(roomNumber) method.
+Light: A service class implementing the HomeService interface, responsible for turning the lights on and off. It includes the turnOn() and turnOff() methods.
 
-Cart: A service class implementing the HotelService interface, responsible for handling luggage cart requests. It includes the requestCart(numberOfCarts) method.
+TV: A service class implementing the HomeService interface, responsible for turning the TV on and off. It includes the turnOn() and turnOff() methods.
 
-FrontDesk: The facade class that coordinates interactions between the client (HotelApp) and the individual hotel services.
+AirConditioning: A service class implementing the HomeService interface, responsible for turning the air conditioning on and off. It includes the turnOn() and turnOff() methods.
 
-HotelApp: The client class that uses the FrontDesk facade to access and utilize hotel services seamlessly.
+HomeInterface: The facade class that coordinates interactions between the client (HomeApp) and the individual home services. It includes the turnOnAll() and turnOffAll() methods to control all services simultaneously.
+
+HomeApp: The client class that uses the HomeInterface to access and utilize home services seamlessly.
 
 In your solution you must provide the following in your Github link account:
 
   Problem statement (description of the problem. Just copy what is stated here.
-  UML Class Diagram
   Uploaded java codes for the solution.
 Upload your GitHub Solution link here.
