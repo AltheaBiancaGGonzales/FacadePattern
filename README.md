@@ -22,6 +22,8 @@ HomeApp: The client class that uses the HomeInterface to access and utilize home
 
 In your solution you must provide the following in your Github link account:
 
-  Problem statement (description of the problem. Just copy what is stated here.
-  Uploaded java codes for the solution.
+Problem statement (description of the problem. Just copy what is stated here.
+
+Uploaded java codes for the solution.
+
 Upload your GitHub Solution link here.
